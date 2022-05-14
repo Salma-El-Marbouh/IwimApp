@@ -7,12 +7,36 @@
     tools:context=".activities.ListProfessorsActivity">
 
 
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/ListView1"
-                android:clickable="true"
-                android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:gravity="center_horizontal"
+        android:text="List of professors"
+        android:textColor="@color/teal_700"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
+    <ListView
+        android:id="@+id/ListView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_marginVertical="30dp"
+        app:flow_verticalAlign="center"
+        android:textAlignment="center">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:gravity="center_horizontal"
+        android:text="Click on the professor to see his profile or to contact him.\n a long click deletes the person from the list"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ListView1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
